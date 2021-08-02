@@ -14,6 +14,7 @@
     <groupId>org.example</groupId>
     <artifactId>multiplication-service</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>multiplication-service</name>
 
     <properties>
         <jib-plugin.version>2.1.0</jib-plugin.version>
@@ -59,11 +60,8 @@
                 <artifactId>jib-maven-plugin</artifactId>
                 <version>${jib-plugin.version}</version>
                 <configuration>
-                    <from>
-                        <image>openjdk:11.0.4-jre-slim</image>
-                    </from>
                     <to>
-                        <image>registry.hub.docker.com/${project.artifactId}</image>
+                        <image>registry.hub.docker.com/nozdemir/${project.name}</image>
                         <tags>
                             <tag>${project.version}</tag>
                             <tag>latest</tag>
